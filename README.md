@@ -29,7 +29,6 @@ class40-project-team-sunday
 │  │  │  │  ├─ envelope.png
 │  │  │  │  ├─ log-out.png
 │  │  │  │  ├─ question.png
-│  │  │  │  ├─ settings.png
 │  │  │  │  ├─ star.png
 │  │  │  │  └─ user.png
 │  │  │  ├─ heart
@@ -39,8 +38,6 @@ class40-project-team-sunday
 │  │  │  │  ├─ findh.png
 │  │  │  │  ├─ gift.svg
 │  │  │  │  ├─ kunstmuseum.jpeg
-│  │  │  │  ├─ logo-find-museum-with-name.png
-│  │  │  │  ├─ logo-find-museum.png
 │  │  │  │  ├─ logo-transparent.png
 │  │  │  │  ├─ louwman-museum.jpeg
 │  │  │  │  ├─ mobile-stores.png
@@ -48,13 +45,7 @@ class40-project-team-sunday
 │  │  │  │  ├─ register-background.jpeg
 │  │  │  │  └─ van-gogh-museum.jpeg
 │  │  │  └─ museums
-│  │  │     ├─ t1.jpeg
 │  │  │     ├─ t11.jpeg
-│  │  │     ├─ t2.jpeg
-│  │  │     ├─ t3.jpeg
-│  │  │     ├─ t4.jpeg
-│  │  │     ├─ t5.jpeg
-│  │  │     └─ t6.jpeg
 │  │  ├─ components
 │  │  │  ├─ Favorite
 │  │  │  │  ├─ Heart.css
