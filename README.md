@@ -254,3 +254,13 @@ For more information on how these work together including the automatic deployme
 - `mongodb-memory-server` || To mock out our database in our backend tests. See [docs](https://github.com/nodkz/mongodb-memory-server)
 - `cors` || To open up our API. See [docs](https://github.com/expressjs/cors#readme)
 - `mongoose` || To add schemas to our database. See [docs](https://mongoosejs.com/)
+
+### Our Team
+* DevOps for the project [Rob van Kruijsdijk](https://www.linkedin.com/in/robvk/)
+* TechLead [Dayan Jonker](https://www.linkedin.com/in/dayan-jonker-a3766b2a/)
+* Product Owner [Michelle Audiffred](https://www.linkedin.com/in/michelleaudiffred/)
+* Developer [Elif Nur Kalkan](https://www.linkedin.com/in/elif-nur-kalkan/)
+* Developer [Svitlana Oliinyk](https://www.linkedin.com/in/svitlana-oliinyk-a67151252/)
+* Developer [Ensar Bektas](https://www.linkedin.com/in/ensar-bektas/)
+* Developer [Yasser Murshed](https://www.linkedin.com/in/yasser-m-674417214/)
+* Developer [Gokhan Ozturk](https://www.linkedin.com/in/g%C3%B6khan-gokhanozturk/)
