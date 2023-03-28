@@ -1,61 +1,204 @@
-`TODO: Add a nice screenshot of the app!`
 
-# Class XX final project
+<h1 align="center">Find Museum - Class 40 Final Project</h1>
+This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors.
 
-This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors. A quick guide to what we built:
 
-> TODO: Add short description of the app
+https://user-images.githubusercontent.com/78509870/228270948-06d397e2-64bb-4461-b39e-c72cc63c29c8.mp4
 
-`[Click here for the Demo version](TODO: add link)`
+<br/>
+With the increasing demand for museum visits, we thought of making such an app so that people can access museums and their information more easily. In our application, there is detailed information about the museum such as address, contact and entrance fees . In addition, visitors can access the museum they want faster with filtering by city, price, category and rating and can benefit from the experiences of other visitors about museums. In addition, as a company we have agreements with some museums for provide cheaper tickets for our registered users. By registering to our application, you can request a promotional code to buy more affordable tickets from certain museums, add the museum to your favorites to review later, and share your own experiences.
 
-## 1. Setup
+[Find Museum Demo](https://c40-team-sunday.herokuapp.com/)
 
-First, to setup all the directories run the following in the main directory:
-
-`npm install`
-
-`npm run setup`
-
-The first command will install `cypress` and some small libraries needed for running the rest of the commands. The second will go into the `client` and `server` directories and set those up to be ran.
-
-In the `client` and `server` directory there are two `.env.example` files. Create a copy and rename that to `.env`. Then follow the instructions in those files to fill in the right values.
-
-To run the app in dev mode you can run the following command in the main directory:
-
-`npm run dev`
 
 ## 2. Code structure
+```
+class40-project-team-sunday
+├─ client
+│  ├─ public
+│  │  ├─ favicon.png
+│  │  └─ index.html
+│  ├─ src
+│  │  ├─ App.jsx
+│  │  ├─ AppWrapper.jsx
+│  │  ├─ assets
+│  │  │  ├─ css
+│  │  │  │  └─ index.css
+│  │  │  ├─ drop
+│  │  │  │  ├─ edit.png
+│  │  │  │  ├─ envelope.png
+│  │  │  │  ├─ log-out.png
+│  │  │  │  ├─ question.png
+│  │  │  │  ├─ settings.png
+│  │  │  │  ├─ star.png
+│  │  │  │  └─ user.png
+│  │  │  ├─ heart
+│  │  │  │  ├─ heart-regular.svg
+│  │  │  │  └─ heart-solid.svg
+│  │  │  ├─ img
+│  │  │  │  ├─ findh.png
+│  │  │  │  ├─ gift.svg
+│  │  │  │  ├─ kunstmuseum.jpeg
+│  │  │  │  ├─ logo-find-museum-with-name.png
+│  │  │  │  ├─ logo-find-museum.png
+│  │  │  │  ├─ logo-transparent.png
+│  │  │  │  ├─ louwman-museum.jpeg
+│  │  │  │  ├─ mobile-stores.png
+│  │  │  │  ├─ no_data.svg
+│  │  │  │  ├─ register-background.jpeg
+│  │  │  │  └─ van-gogh-museum.jpeg
+│  │  │  └─ museums
+│  │  │     ├─ t1.jpeg
+│  │  │     ├─ t11.jpeg
+│  │  │     ├─ t2.jpeg
+│  │  │     ├─ t3.jpeg
+│  │  │     ├─ t4.jpeg
+│  │  │     ├─ t5.jpeg
+│  │  │     └─ t6.jpeg
+│  │  ├─ components
+│  │  │  ├─ Favorite
+│  │  │  │  ├─ Heart.css
+│  │  │  │  └─ Heart.jsx
+│  │  │  ├─ Footer
+│  │  │  │  ├─ footer.css
+│  │  │  │  └─ footer.jsx
+│  │  │  ├─ Home-Page
+│  │  │  │  ├─ Goal-Section
+│  │  │  │  │  ├─ Goal.jsx
+│  │  │  │  │  └─ goal.css
+│  │  │  │  ├─ Searching-Bar
+│  │  │  │  │  ├─ SearchingBar.jsx
+│  │  │  │  │  └─ searching-bar.css
+│  │  │  │  ├─ Upcoming-Events
+│  │  │  │  │  ├─ Events.jsx
+│  │  │  │  │  └─ events.css
+│  │  │  │  └─ museum
+│  │  │  │     ├─ Header.jsx
+│  │  │  │     ├─ MuseumDetails.jsx
+│  │  │  │     ├─ MuseumList.jsx
+│  │  │  │     ├─ MuseumList.testid.js
+│  │  │  │     ├─ museum-details.css
+│  │  │  │     └─ review
+│  │  │  │        ├─ ReviewCard.jsx
+│  │  │  │        ├─ ReviewCardRate.jsx
+│  │  │  │        ├─ ReviewForm.jsx
+│  │  │  │        ├─ StarRating.jsx
+│  │  │  │        ├─ review-card-rate.css
+│  │  │  │        ├─ review-card.css
+│  │  │  │        ├─ review-form.css
+│  │  │  │        └─ star-rating.css
+│  │  │  ├─ Museum-Overview
+│  │  │  │  ├─ AllMuseums.jsx
+│  │  │  │  ├─ FilterBar.jsx
+│  │  │  │  ├─ MuseumCard.jsx
+│  │  │  │  ├─ NotFound.jsx
+│  │  │  │  ├─ SearchedMuseums.jsx
+│  │  │  │  ├─ all-museums.css
+│  │  │  │  ├─ filter-bar.css
+│  │  │  │  ├─ museum-card.css
+│  │  │  │  ├─ not-found.css
+│  │  │  │  └─ searched-museums.css
+│  │  │  ├─ Nav-Bar
+│  │  │  │  ├─ Nav.jsx
+│  │  │  │  ├─ Profile
+│  │  │  │  │  ├─ Profile.jsx
+│  │  │  │  │  └─ profile.css
+│  │  │  │  └─ nav.css
+│  │  │  ├─ Nav.testid.js
+│  │  │  └─ common
+│  │  │     ├─ loading
+│  │  │     │  ├─ Loading.jsx
+│  │  │     │  └─ loading.css
+│  │  │     ├─ pagination
+│  │  │     │  ├─ Pagination.jsx
+│  │  │     │  └─ pagination.css
+│  │  │     └─ unauthorized
+│  │  │        ├─ UnAuthorized.jsx
+│  │  │        └─ unauthorized.css
+│  │  ├─ context
+│  │  │  ├─ authContext.js
+│  │  │  └─ museumContext.js
+│  │  ├─ hooks
+│  │  │  ├─ __tests__
+│  │  │  │  └─ useFetch.test.js
+│  │  │  ├─ scrollToUp.js
+│  │  │  └─ useFetch.js
+│  │  ├─ index.jsx
+│  │  ├─ pages
+│  │  │  ├─ Auth
+│  │  │  │  ├─ ForgotPassword.jsx
+│  │  │  │  ├─ LoginForm.jsx
+│  │  │  │  ├─ OTPInput.jsx
+│  │  │  │  ├─ RegisterForm.jsx
+│  │  │  │  ├─ ResetPassword.jsx
+│  │  │  │  ├─ forgot-password.css
+│  │  │  │  ├─ login-form.css
+│  │  │  │  ├─ otp-input.css
+│  │  │  │  ├─ register-form.css
+│  │  │  │  └─ reset-password.css
+│  │  │  ├─ Home
+│  │  │  │  └─ Home.jsx
+│  │  │  ├─ MuseumOverview
+│  │  │  │  ├─ MuseumOverview.jsx
+│  │  │  │  ├─ SearchedOverview.jsx
+│  │  │  │  ├─ museum-overview.css
+│  │  │  │  └─ searched-overview.css
+│  │  │  ├─ Museums
+│  │  │  │  └─ Favorites.jsx
+│  │  │  ├─ MyProfile
+│  │  │  │  ├─ MyProfile.jsx
+│  │  │  │  ├─ ProfileReviewCard.jsx
+│  │  │  │  ├─ ReviewEdit.jsx
+│  │  │  │  ├─ UserComments.jsx
+│  │  │  │  ├─ my-profile.css
+│  │  │  │  ├─ profile-review-card.css
+│  │  │  │  ├─ review-edit.css
+│  │  │  │  └─ user-comments.css
+│  │  │  └─ Offers
+│  │  │     ├─ OfferItem.jsx
+│  │  │     ├─ Offers.jsx
+│  │  │     └─ offers.css
+└─ server
+   └─ src
+      ├─ __tests__
+      │  ├─ createUser.test.js
+      │  └─ user.test.js
+      ├─ app.js
+      ├─ controllers
+      │  ├─ comment.js
+      │  ├─ museum.js
+      │  ├─ offer.js
+      │  └─ user.js
+      ├─ data
+      │  ├─ museumData.js
+      │  └─ museumsData.js
+      ├─ db
+      │  └─ connectDB.js
+      ├─ index.js
+      ├─ models
+      │  ├─ Comment.js
+      │  ├─ Museum.js
+      │  ├─ Offer.js
+      │  └─ User.js
+      ├─ result.rest
+      ├─ routes
+      │  ├─ comment.js
+      │  ├─ museum.js
+      │  ├─ offer.js
+      │  └─ user.js
+      ├─ testRouter.js
+      └─ util
+         ├─ __tests__
+         │  ├─ logging.test.js
+         │  ├─ validateAllowedFields.test.js
+         │  └─ validationErrorMessage.test.js
+         ├─ logging.js
+         ├─ mailer.js
+         ├─ sendEmail.js
+         ├─ validateAllowedFields.js
+         └─ validationErrorMessage.js
 
 ```
-client
-├── public
-└── src
-|   └── __tests__
-|   └── __testUtils__
-|   └── components
-|   └── hooks
-|   └── pages
-|       └── __tests__
-|       └── components
-|   └── util
-|   index.jsx
-cypress
-|   └── fixtures
-|   └── integration
-|   └── plugins
-|   └── support
-server
-└── src
-    └── __tests__
-    └── __testUtils__
-    └── controllers
-    └── db
-    └── models
-    └── routes
-    └── util
-    index.js
-```
-
 ### 2.1 Client structure
 
 - `public` || public facing client code
@@ -68,14 +211,8 @@ server
 - `util` || any utility functions that can be used anywhere on the client side
 - `index.jsx` || the start point of the client
 
-### 2.2 Cypress structure
 
-- `fixtures` || any data/files that `cypress` needs can be placed here
-- `integration` || all of our tests are in here, separated in folders based on the pages in our app
-- `plugins` || any plugins for our `cypress` configuration can be placed here
-- `support` || custom commands and other support files for `cypress` can be placed here
-
-### 2.3 Server structure
+### 2.2 Server structure
 
 - `__tests__` || any `jest` tests for the api endpoints as that is our testing strategy for the backend
 - `__testUtils__` || any code that is only being used in the tests is put in the `__testUtils__` folder to separate that away from the rest of the code
@@ -87,8 +224,9 @@ server
 - `index.js` || the start point of the server
 
 ## 3. Stack / external libraries
+<img src="https://user-images.githubusercontent.com/78509870/228296500-5e4cfc93-23d6-43ee-9132-71a9e03d6a4c.png" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228298069-6fc46257-c1f9-43f6-ab0e-d3fa701e28fd.png" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228298433-9b9aa4da-318a-493a-aff9-68255c440115.jpeg" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228300508-0fba9c46-6f33-4688-8a19-3e14b8ae310b.png" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228298714-94cdb18d-3377-46e7-8c8b-1beede03a444.png" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228298818-f97a2200-1b31-4281-91d7-761e4e0ccec7.png" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228298934-f350a7fa-e100-4b90-ac04-439661da804c.png" height="50" alt="HTML:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/78509870/228299110-0213c2dc-b707-4577-b0e1-7e054f740082.png" height="50" alt="HTML:5">
 
-The base stack of the app is a MERN stack (Mongoose, Express, React, Node). Next to that we make use of the following extras:
+
 
 ### 3.1 Configuration libraries
 
