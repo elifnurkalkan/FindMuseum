@@ -1,9 +1,9 @@
-
 <h1 align="center">Find Museum - Class 40 Final Project</h1>
+
 This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors.
 
-
 https://user-images.githubusercontent.com/78509870/228270948-06d397e2-64bb-4461-b39e-c72cc63c29c8.mp4
+
 
 <br/>
 With the increasing demand for museum visits, we thought of making such an app so that people can access museums and their information more easily. In our application, there is detailed information about the museum such as address, contact and entrance fees . In addition, visitors can access the museum they want faster with filtering by city, price, category and rating and can benefit from the experiences of other visitors about museums. In addition, as a company we have agreements with some museums for provide cheaper tickets for our registered users. By registering to our application, you can request a promotion code to buy more cheaper tickets from stated museums, add the museum to your favorites to review later, and share your own experiences.
