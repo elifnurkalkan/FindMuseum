@@ -133,6 +133,7 @@
   margin-left: 55px;
   margin-right: 55px;
   font-size: clamp(1.2rem, 2vw, 2.2rem);
+  text-align: left;
 }
 
 .sunflowers {

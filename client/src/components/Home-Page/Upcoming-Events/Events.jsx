@@ -31,6 +31,9 @@ const Events = () => {
 
         <div className="event-sections-text">
           <div className="section-para">
+            <h2>Van Gogh Museum</h2>
+            <b>Exhibiton Time:10 February 2023 - 10 April 2023</b>
+            <hr />
             <p>
               The Van Gogh Museum celebrates 50 years of inspiration. Read on
               for the complete anniversary programme.
@@ -40,13 +43,6 @@ const Events = () => {
               During this special year, we will be pulling out all the stops
               with exhibitions that bring you closer to Van Gogh as an artist
               and a person.
-            </p>
-            <p>
-              <i>10 February 2023 - 10 April 2023</i>:
-            </p>
-            <p>
-              get to know the family behind Vincent van Gogh in the exhibition
-              Choosing Vincent.
             </p>
           </div>
           <a
@@ -61,11 +57,16 @@ const Events = () => {
 
       <div className="louwman-section">
         <div className="event-sections-text">
-          <div className="section-para" style={{ textAlign: "center" }}>
-            <h4>Collection of automobiles </h4>
-            <h3>in LOUWMAN MUSEUM</h3>
+          <div className="section-para">
+            <h2>Louwman Museum</h2>
+            <b>Exhibiton Time:1 January 2023 - 31 December 2023</b>
+            <hr />
+            <h4></h4>
             <p>
-              <i>1 January 2023 - 31 December 2023</i>
+              Collection of automobiles..Meet all the masterpieces from the
+              history of progress like: Brooke 25/30-HP Swan Car & Talbot Lago
+              T150 SS Teardrop Coupe Figoni & Falaschi & Pegaso Z-102 Cúpula &
+              Spyker 60-HP Four-Wheel Drive Racing Car.
             </p>
           </div>
           <a
@@ -85,10 +86,9 @@ const Events = () => {
 
         <div className="event-sections-text">
           <div className="section-para">
-            <h4>
-              <i>18 February 2023 - 10 September 2023</i>
-            </h4>
-            <h3>Escher - Other World</h3>
+            <h2>Escher - Other World</h2>
+            <b>Exhibiton Time:18 February 2023 - 10 September 2023</b>
+            <hr />
             <p>
               Birds that become fish, water that flows uphill, two hands drawing
               each other: with consummate skill, M.C. Escher would transform a
