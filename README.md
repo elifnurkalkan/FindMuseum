@@ -2,7 +2,11 @@
 
 This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors.
 
-https://user-images.githubusercontent.com/78509870/228270948-06d397e2-64bb-4461-b39e-c72cc63c29c8.mp4
+
+
+https://user-images.githubusercontent.com/78509870/230748186-284031aa-5a2f-4acd-9498-46731ea559b2.mp4
+
+
 
 With the increasing demand for museum visits, we thought of making such an app so that people can access museums and their information more easily. In our application, 
 - User can reach the detailed information about the museum such as address, contact info and entrance fees.
